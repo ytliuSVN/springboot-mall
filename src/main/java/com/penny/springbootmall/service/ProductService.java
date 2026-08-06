@@ -3,7 +3,11 @@ package com.penny.springbootmall.service;
 import com.penny.springbootmall.dto.ProductRequest;
 import com.penny.springbootmall.model.Product;
 
+import java.util.List;
+
 public interface ProductService {
+
+    List<Product> getProducts();
 
     Product getProductByld(Integer productId);
 

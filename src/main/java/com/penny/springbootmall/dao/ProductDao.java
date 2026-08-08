@@ -1,6 +1,6 @@
 package com.penny.springbootmall.dao;
 
-import com.penny.springbootmall.constant.ProductCategory;
+import com.penny.springbootmall.dto.ProductQueryParams;
 import com.penny.springbootmall.dto.ProductRequest;
 import com.penny.springbootmall.model.Product;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ProductDao {
 
-    List<Product> getProducts(ProductCategory category, String search);
+    List<Product> getProducts(ProductQueryParams productQueryParams);
 
     Product getProductByld(Integer productId);
 
